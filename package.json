@@ -1,0 +1,29 @@
+{
+  "name": "new-app",
+  "version": "1.0.0",
+  "description": "New App project",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm start --prefix client",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \" run client \"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "api": "^4.0.0",
+    "app": "^0.1.0",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "insomnia-inso": "^2.4.0",
+    "mongoose": "^6.0.12",
+    "nodemon": "^2.0.14",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "concurrently": "^6.3.0"
+  }
+}
